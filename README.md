@@ -26,6 +26,7 @@ This project is designed as a minimal viable product (MVP) for integration with 
 ```bash
 git clone https://github.com/your-username/catfoodcheck.git
 cd catfoodcheck
+```
 
 2. Create a virtual environment (optional but recommended):
 
@@ -33,11 +34,13 @@ cd catfoodcheck
 python -m venv venv
 source venv/bin/activate  # Linux / Mac
 venv\Scripts\activate     # Windows
+```
 
 3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### Running Locally
 
@@ -45,6 +48,7 @@ Start the FastAPI server:
 
 ```bash
 uvicorn main:app --reload
+```
 
 Open your browser at http://127.0.0.1:8000/docs to see the interactive API documentation.
 
@@ -59,6 +63,7 @@ For Render:
 
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 10000
+```
 
 3.Render will provide a public URL which your mobile app can use.
 
@@ -68,6 +73,7 @@ Send a GET request to /scan/{ean} where {ean} is the barcode number of the cat f
 
 ```bash
 GET https://your-app.onrender.com/scan/5411188112345
+```
 
 Example JSON response:
 
@@ -77,6 +83,7 @@ Example JSON response:
   "brand": "Royal Canin",
   "wsava": true
 }
+```
 
 ### WSAVA Compliance
 
